@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap");
+@font-face {
+  font-family: "Permutu";
+  src: url("/fonts/Permutu.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: "#e9e9e9";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: "#e9e9e9";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.monospace {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.permutu {
+  font-family: "Permutu", "Roboto", sans-serif;
+}
+
+.permutuBlock {
+  user-select: none;
+  color: black;
+  background-color: #e0e0e0;
+  border: 2px solid rgb(245, 245, 245);
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 2px #a3a3a3;
+}
+
+.permutuBlockHeader {
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.permutuRed {
+  color: #dd1e1e;
+}
+
+.permutuGreen {
+  color: #009600;
+}
+
+.permutuBlack {
+  color: #0e0c16;
+}
+
+.permutuHovered {
+  border: 2px solid #db5016;
+  background-color: #cfc5c5;
+}
+
+.permutuBrown {
+  color: #443636;
+  background-color: #191515;
+  text-shadow: none;
+  border-color: #2e2424;
+  box-shadow: none;
+}
+
+.permutuPlayer {
+  background-color: #e0e0dd;
+  border-color: rgb(255, 220, 154);
+}
+
+.permutuOpponent {
+  opacity: 0.7;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #db5016;
+}
+
+input[type="range"] {
+  height: 32px;
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: transparent;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #db5016;
+  border-radius: 25px;
+  border: 1px solid #db5016;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #231c1c;
+  border: 1px solid #231c1c;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #e0e0e0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #db5016;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #db5016;
+  border-radius: 25px;
+  border: 1px solid #db5016;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #db5016;
+  border: 1px solid #db5016;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #db5016;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  animate: 0.8s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #db5016;
+  border: 1px solid #db5016;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #db5016;
+  border: 1px solid #db5016;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #db5016;
+  border: 1px solid #db5016;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #db5016;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #db5016;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #db5016;
+}
